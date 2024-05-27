@@ -1,0 +1,76 @@
+.secao-player {
+    background-color: #041832;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    column-gap: 2rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.player_descricao{
+    display: grid;
+    grid-template-columns: 4.5rem auto;
+    grid-template-rows: repeat(2, 2rem);
+    align-items: center;
+}
+
+.player_descricao__imagem{
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.player_temporizador{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+}
+
+.player_temporizador-botoes{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.player_temporizador-cronometro{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: .4rem;
+}
+
+.player_volume{
+    display: grid;
+    width: 10rem;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    column-gap: .6rem;
+}
+
+.player_descricao, .player_temporizador-cronometro {
+    cursor: default;
+}
+
+.player_temporizador-cronometro_tempo {
+    width: 100%;
+    height: 0.25rem;
+    background: white;
+    border-radius: .5rem;
+}
+
+.player_descricao h3 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.player_descricao span {
+    font-size: 0.9rem;
+}
+
+.player_volume_nivel {
+    width: 70%;
+    height: 0.25rem;
+    background: white;
+    border-radius: .5rem;
+}
+
